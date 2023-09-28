@@ -1,0 +1,68 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(250, 235, 110);
+    overflow-x: hidden;
+    display: flexbox;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+  
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+#aboutUs, #contactUs {
+    margin: 0 auto;
+    padding-top: 3%;
+    text-align: center;
+    z-index: 0;
+    font-size: 22px;
+    color: rgb(255,50,0);
+}
+#aboutUs {
+    width: 60%;
+}
+#contactUs {
+    width: 45%;
+    padding-bottom: 3%;
+}
+
+table {
+    font-size: 20px;
+    color: rgb(255,50,0);
+    z-index:0;
+}
+img {
+    width: 112.5px;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid #dc3545;
+}

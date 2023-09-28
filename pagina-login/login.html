@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Baugram - Login</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-widht, initial scale=1"/>
+        <link rel="icon" href="../util/logo-icona.png"/>
+       
+       	<!--Importo la Google Platform Library-->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <!--Da implementare con l'ID quando registro l'App-->
+        <meta name="google-signin-client_id" content="457168566226-7d0rsontq4kk66hpp6hd03b3lqfa2i8n.apps.googleusercontent.com">
+       
+        <!-- Importo bootstrap CSS e JS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Importo JQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+        <!-- Importo animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+        <!-- Importo il mio CSS per questa pagina -->
+        <link rel="stylesheet" href="login.css"/>
+
+        <!-- Importo le mie funzioni per questo form -->
+        <script type="test/javascript" lang="javascript" src="login.js"></script>
+
+    </head>
+    <body background="../util/sfondo-home-scuro.jpg">
+        <ul>
+            <li style="background-color: #ff7514; border-right: none;"><a href="../index.html">Home</a></li>
+            <li><a href="../pagina-aboutUs/aboutUs.html#aboutUs">About Us</a></li>
+            <li><a href="../pagina-aboutUs/aboutUs.html#contactUs">Contact Us</a></li>
+            <li style="float: right; background-color: #6c757d; border-right: none;"><a href="../pagina-signup/signup.html">Sign Up</a></li>
+            <li style="float: right; background-color: #ffc107; border-right: none;"><a href="../pagina-login/login.html">Login</a></li>
+        </ul>
+        <div class="logo">
+            <a href="../index.html"><img src="../util/logo-scritta-ombra.png" class="animated bounceInDown" width="500" height="130"></a>
+        </div>
+        <h1 class="animated infinite pulse">LOGIN</h1>
+        <div class="centerzone">
+            <form action="login.php" name="loginForm" class="form-login" method="POST" onsubmit="return checkLogin();">
+                <input type="text" name="username" class="form-control animated bounceInRight" placeholder="Username" required autofocus/>
+                <br>
+                <input type="password" name="password" class="form-control animated bounceInLeft" placeholder="Password" required/>
+                <br>
+                <div class="animated bounceInRight">Not registered? Click <a href="../pagina-signup/signup.html">here</a></div>
+                <br>
+                <button class="btn btn-lg btn-danger btn-block" name="loginButton" type="submit" class="animated bounceInLeft">LOGIN</button>
+        	    <br>
+                Or:<div class="g-signin2" data-width="410" data-height="50" data-longtitle="true" data-onsuccess="onSignIn"></div>
+            </form>
+        </div>
+    </body>
+</html>

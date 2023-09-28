@@ -1,0 +1,69 @@
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flexbox;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* imposta il colore del bottone quando ci passi sopra col mouse */
+li a:hover {
+  background-color: #111;
+}
+
+div.logo {
+  padding-top: 1%;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 1%;
+  text-align: center;
+font-size: 25pt;
+}
+
+div.centerzone {
+  padding-top: 1%;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+div.g-signin2 {
+border-radius: 10px 10px 10px 10px;
+padding-top: 1%;
+  margin: auto;
+  text-align: center;
+}
+
+.form-login .form-control {
+  font-size: 12px;
+  text-align: center;
+}

@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Baugram - Sign up</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-widht, initial scale=1"/>
+        <link rel="icon" href="../util/logo-icona.png"/>
+
+        <!-- Importo bootstrap CSS e JS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Importo JQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+        <!-- Importo animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+        <!-- Importo il mio CSS per questa pagina -->
+        <link rel="stylesheet" href="signup.css"/>
+
+        <!-- Importo le mie funzioni per questo form -->
+        <script type="text/javascript" lang="javascript" src="signup.js"></script>
+    </head>
+
+    <body background="../util/sfondo-home-scuro.jpg">
+        <ul>
+            <li style="background-color: #ff7514; border-right: none;"><a href="../index.html">Home</a></li>
+            <li><a href="../pagina-aboutUs/aboutUs.html#aboutUs">About Us</a></li>
+            <li><a href="../pagina-aboutUs/aboutUs.html#contactUs">Contact Us</a></li>
+            <li style="float: right; background-color: #6c757d; border-right: none;"><a href="../pagina-signup/signup.html">Sign Up</a></li>
+            <li style="float: right; background-color: #ffc107; border-right: none;"><a href="../pagina-login/login.html">Login</a></li>
+        </ul>
+        <div class="logo">
+            <a href="../index.html"><img src="../util/logo-scritta-ombra.png" class="animated bounceInDown" width="500" height="130"></a>
+        </div>
+        <h1 class="animated infinite pulse">REGISTRATION</h1>
+        <div class="centerzone">
+            <form action="signup.php" name="registrForm" class="form-registr" method="POST" onsubmit="return checkSignUp();">
+                <input type="text" name="nomePadrone" class="form-control animated bounceInRight" placeholder="Owner name" required autofocus/>
+                <br>
+                <input type="text" name="cognomePadrone" class="form-control animated bounceInLeft" placeholder="Owner last name" required/>                    <br>
+                <input type="text" name="nomeCane" class="form-control animated bounceInRight" placeholder="Dog name" required/>
+                <br>
+                <input type="text" name="username" class="form-control animated bounceInLeft" placeholder="Dog username" required/>
+                <br>
+                <input type="email" name="email" class="form-control animated bounceInLeft" placeholder="E-mail" required/>
+                <br>
+                <input type="password" name="password" class="form-control animated bounceInRight" placeholder="Password" required/>
+                <br>
+                <input type="password" name="passwordConfirm" class="form-control animated bounceInLeft" placeholder="Re-type password" required/>
+                <br>
+                <table class="animated bounceInRight">
+                    <tr>
+                        <td><button name="submitButton" class="btn btn-lg btn-danger btn-length" type="submit">INVIA</button></td>
+                        <td><button name="resetButton" class="btn btn-lg btn-secondary btn-length" type="reset">RESET</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

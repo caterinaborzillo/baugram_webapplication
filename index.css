@@ -1,0 +1,51 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flexbox;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+div.carosello {
+    width: 30%;
+    margin: auto;
+    border: 5px solid #dc3545;
+    border-radius: 20px;
+}
+img {
+	height: 80%;
+    border-radius: 15px;
+}

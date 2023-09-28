@@ -1,0 +1,56 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+	display: flexbox;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    border-bottom: 2px solid black;
+    position: sticky;
+    top:0;
+}
+  
+li {
+    float: left;
+}
+  
+li i {
+    font-size: 30px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+#searchtext {
+    font-size: 20px;
+    text-align: center;
+    border-color: black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+div.profile-descr-zone {
+    padding-top: 2%;
+    text-align: center;
+}
+div.profile-data {
+    padding-left: 1%;
+    text-align: center;
+    width: 22%;
+    margin: 0 auto;
+}
